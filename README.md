@@ -18,21 +18,22 @@ Simple installation
    </body>
 </html>
 
-# --> navigate to home
+--> navigate to home
 cd ~
-# --> Clone the project:
+--> Clone the project:
 git clone https://github.com/MichaelDeMattos/mattos-codec-base64.git
 
-# --> browse the cloned project in the installation directory
+--> browse the cloned project in the installation directory
 cd /mattos-codec-base64/Install/
 
-# --> run the script to install all the dependencies and the shortcut on your desktop
-# -- Exemple GNU/LINUX Debian10
-$ su -
-$ chmod +x .install.sh
-$ ./install
-# --> Provide the user name for which the installation will be performe
-# --> Ready! you can now use the program
-
-# --> you can also watch a tutorial by clicking on the link below
+--> run the script to install all the dependencies and the shortcut on your desktop
+--> Exemple GNU/LINUX Debian10
+su -
+cd /mattos-codec-base64/Install/
+chmod +x .install.sh
+./install
+--> Provide the user name for which the installation will be performe
+--> Ready! you can now use the program
+--> you can also watch a tutorial by clicking on the link below
+https://youtu.be/-VpNc9ZRi_Y
 
