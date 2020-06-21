@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Mattos Codec-Base64
+Type=Application
+Exec=python3 /usr/share/applications/mattos-codec-base64.pyc
+Icon=system-run
+Name[pt_BR]=Mattos Codec-Base64
+Author=Michael de Mattos
+
