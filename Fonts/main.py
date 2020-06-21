@@ -112,6 +112,7 @@ class Handler(object):
     #Function showing the system's user manual
     def on_bt_manual_clicked(self, *args):
         print("manual")
+        os.system("firefox https://youtu.be/-VpNc9ZRi_Y")
     
     #Function that takes the
     #user to the donate page
