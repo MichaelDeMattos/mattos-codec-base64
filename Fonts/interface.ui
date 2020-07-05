@@ -177,27 +177,10 @@ Certifique que as informações foram salvas.</property>
                 <property name="margin_right">5</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">5</property>
-                <property name="label" translatable="yes">Path    +    Archive :</property>
+                <property name="label" translatable="yes">Archive :</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
-                <property name="top_attach">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkEntry" id="archive">
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="margin_left">5</property>
-                <property name="margin_right">5</property>
-                <property name="margin_top">5</property>
-                <property name="margin_bottom">5</property>
-                <property name="max_length">100</property>
-                <property name="width_chars">50</property>
-                <property name="max_width_chars">50</property>
-              </object>
-              <packing>
-                <property name="left_attach">1</property>
                 <property name="top_attach">0</property>
               </packing>
             </child>
@@ -242,7 +225,7 @@ Certifique que as informações foram salvas.</property>
                 <property name="margin_right">5</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">5</property>
-                <property name="label" translatable="yes">Project destination:</property>
+                <property name="label" translatable="yes">Path Project:</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
@@ -250,17 +233,30 @@ Certifique que as informações foram salvas.</property>
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="path_destin">
+              <object class="GtkFileChooserButton" id="archive">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="halign">start</property>
+                <property name="can_focus">False</property>
                 <property name="margin_left">5</property>
                 <property name="margin_right">5</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">5</property>
-                <property name="max_length">30</property>
-                <property name="width_chars">30</property>
-                <property name="max_width_chars">30</property>
+                <property name="title" translatable="yes"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFileChooserButton" id="path_destiny">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">5</property>
+                <property name="margin_right">5</property>
+                <property name="margin_top">5</property>
+                <property name="margin_bottom">5</property>
+                <property name="action">select-folder</property>
+                <property name="title" translatable="yes"/>
               </object>
               <packing>
                 <property name="left_attach">1</property>
@@ -293,7 +289,6 @@ Certifique que as informações foram salvas.</property>
             <property name="margin_right">5</property>
             <property name="margin_top">5</property>
             <property name="margin_bottom">5</property>
-            <property name="label" translatable="yes">your result</property>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -336,7 +331,6 @@ Certifique que as informações foram salvas.</property>
                 <property name="margin_right">5</property>
                 <property name="margin_top">5</property>
                 <property name="margin_bottom">5</property>
-                <property name="image">img_donate</property>
                 <property name="use_underline">True</property>
                 <property name="always_show_image">True</property>
                 <signal name="clicked" handler="on_bt_donate_activate" swapped="no"/>
